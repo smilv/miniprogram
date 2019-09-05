@@ -1,0 +1,12 @@
+Component({
+    properties:{
+        text:{
+            type:String,
+            value:"value"
+        }
+    },
+    data:{
+        data:""
+    },
+    methods:{}
+})
