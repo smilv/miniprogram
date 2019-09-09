@@ -1,13 +1,33 @@
 {
-  "pages": [
-    "pages/index/index",
-    "pages/logs/logs"
-  ],
-  "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "对啊课堂 分类",
-    "navigationBarTextStyle": "black"
-  },
-  "sitemapLocation": "sitemap.json"
+    "pages": [
+        "pages/tabBar/index/index",
+        "pages/tabBar/my/my"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "对啊课堂",
+        "navigationBarTextStyle": "black"
+    },
+    "sitemapLocation": "sitemap.json",
+    "tabBar": {
+        "color": "#999",
+        "selectedColor": "#000",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+        "list": [
+            {
+                "pagePath": "pages/tabBar/index/index",
+                "iconPath": "image/tab1.png",
+                "selectedIconPath": "image/tab1_on.png",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/tabBar/my/my",
+                "iconPath": "image/tab2.png",
+                "selectedIconPath": "image/tab2_on.png",
+                "text": "我的"
+            }
+        ]
+    }
 }

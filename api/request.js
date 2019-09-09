@@ -1,3 +1,4 @@
+//request接口封装
 const api = require("./index.js")
 
 const request = (url, method, header, data) => {
