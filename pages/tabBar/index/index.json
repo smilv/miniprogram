@@ -1,3 +1,6 @@
 {
-    "navigationBarTitleText": "会计初级职称"
+    "navigationBarTitleText": "会计初级职称",
+    "usingComponents":{
+        "advertisement":"/components/advertisement/advertisement"
+    }
 }

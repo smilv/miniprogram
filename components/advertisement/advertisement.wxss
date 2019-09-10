@@ -1,0 +1,12 @@
+.bg {
+    background: url("http://common.duia.com/resource/img/wap_appDown/appDownbgImg.png");
+    height: 110rpx;
+    display: flex;
+}
+
+.img {
+    width: 70rpx;
+    height: 70rpx;
+    border-radius: 4rpx;
+    margin: 20rpx 40rpx 0 70rpx;
+}

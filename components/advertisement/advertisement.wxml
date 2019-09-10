@@ -1,0 +1,3 @@
+<view class="bg" wx:if="{{data}}">
+    <image class="img" src="{{api.tuPath+'/'+data.imagUrl}}"></image>
+</view>
