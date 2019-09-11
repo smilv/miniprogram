@@ -1,3 +1,10 @@
 <view class="bg" wx:if="{{data}}">
-    <image class="img" src="{{api.tuPath+'/'+data.imagUrl}}"></image>
+    <view class="main">
+        <image class="img" src="{{api.tuPath+'/'+data.imagUrl}}"></image>
+        <view>
+            <view class="title">{{data.title}}</view>
+            <view class="txt">{{data.subTitle}}</view>
+        </view>
+    </view>
+    <image bindtap="close" class="close" src="../../image/close.png"></image>
 </view>

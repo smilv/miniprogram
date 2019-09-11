@@ -2,6 +2,11 @@
     background: url("http://common.duia.com/resource/img/wap_appDown/appDownbgImg.png");
     height: 110rpx;
     display: flex;
+    justify-content: space-between;
+}
+
+.main {
+    display: flex;
 }
 
 .img {
@@ -9,4 +14,21 @@
     height: 70rpx;
     border-radius: 4rpx;
     margin: 20rpx 40rpx 0 70rpx;
+}
+
+.title {
+    color: #47c88a;
+    font-size: 30rpx;
+    margin-top: 16rpx;
+}
+
+.txt {
+    color: #9d9b9b;
+    font-size: 24rpx;
+}
+
+.close {
+    width: 20rpx;
+    height: 20rpx;
+    margin: 20rpx;
 }

@@ -19,4 +19,12 @@ Component({
         moved: function() {},
         detached: function() {},
     },
+    methods: {
+        //关闭app广告
+        close: function() {
+            this.setData({
+                data: null
+            })
+        }
+    }
 })
