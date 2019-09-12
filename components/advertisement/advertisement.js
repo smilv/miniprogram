@@ -1,10 +1,10 @@
 // 首页app广告
-const request = require("../../api/request.js")
-const api = require("../../api/index.js")
+const request = require("../../request/index.js")
+const uri = require("../../uri/index.js")
 
 Component({
     data: {
-        api: api,
+		uri: uri,
         data: null
     },
     lifetimes: {

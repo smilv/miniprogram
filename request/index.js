@@ -1,5 +1,5 @@
 //request接口封装
-const api = require("./index.js")
+const uri = require("../uri/index.js")
 
 const request = (url, method, header, data) => {
     return new Promise((resolve, reject) => {
@@ -20,10 +20,10 @@ const request = (url, method, header, data) => {
 
 module.exports = {
     recommend: () => {
-        return request(api.skuPath + '/wap/recommend')
+		return request(uri.skuPath + '/wap/recommend')
     },
     skuConfig: data => {
-        return request(api.skuPath + '/index/config/sku', 'POST', {
+		return request(uri.skuPath + '/index/config/sku', 'POST', {
             'content-type': 'application/x-www-form-urlencoded'
         }, data)
     }

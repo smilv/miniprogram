@@ -1,6 +1,6 @@
 <view class="bg" wx:if="{{data}}">
     <view class="main">
-        <image class="img" src="{{api.tuPath+'/'+data.imagUrl}}"></image>
+        <image class="img" src="{{uri.tuPath+'/'+data.imagUrl}}"></image>
         <view>
             <view class="title">{{data.title}}</view>
             <view class="txt">{{data.subTitle}}</view>
