@@ -1,0 +1,7 @@
+<swiper indicator-dots="true" autoplay="true" interval="2000">
+  <block wx:for="{{data}}" wx:key="index">
+    <swiper-item>
+      <image src="{{uri.tuPath+'/'+item.picUrl}}" class="banner" data-item="{{item}}" bindtap="link"/>
+    </swiper-item>
+  </block>
+</swiper>

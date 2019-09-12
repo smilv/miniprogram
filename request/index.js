@@ -1,6 +1,5 @@
 //request接口封装
 const uri = require("../uri/index.js")
-
 const request = (url, method, header, data) => {
     return new Promise((resolve, reject) => {
         wx.request({
@@ -20,11 +19,14 @@ const request = (url, method, header, data) => {
 
 module.exports = {
     recommend: () => {
-		return request(uri.skuPath + '/wap/recommend')
+        return request(uri.skuPath + '/wap/recommend')
     },
     skuConfig: data => {
-		return request(uri.skuPath + '/index/config/sku', 'POST', {
+        return request(uri.skuPath + '/index/config/sku', 'POST', {
             'content-type': 'application/x-www-form-urlencoded'
         }, data)
+    },
+    banner: skuId => {
+        return request(uri.skuPath + '/wap/carousel/' + skuId)
     }
 }

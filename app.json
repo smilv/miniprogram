@@ -1,8 +1,8 @@
 {
     "pages": [
-        "pages/index/index",
+        "pages/home/home",
         "pages/my/my",
-        "pages/index-demo/index-demo",
+        "pages/index/index",
         "pages/logs/logs"
     ],
     "window": {
@@ -19,7 +19,7 @@
         "backgroundColor": "#ffffff",
         "list": [
             {
-                "pagePath": "pages/index/index",
+                "pagePath": "pages/home/home",
                 "iconPath": "image/tab1.png",
                 "selectedIconPath": "image/tab1_on.png",
                 "text": "首页"

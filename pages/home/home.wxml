@@ -1,0 +1,6 @@
+<advertisement />
+<view class="nav">
+	<view>分类</view>
+	<view>关注公众号</view>
+</view>
+<banner />

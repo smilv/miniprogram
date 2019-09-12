@@ -1,7 +1,21 @@
-.nav{
-	display: flex;
-	justify-content:space-between;
-	color:#47c88a;
-	padding:10rpx 40rpx;
-	font-size:26rpx;
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200rpx;
 }
