@@ -6,18 +6,20 @@
     </view>
     <banner />
     <view class="module">
-        <view class="block">
-            <view class="lump">
-                <image src="../../image/systemclass.png" class="systemclass"></image>
-                <image src="../../image/hot.png" class="hot"></image>
+        <block wx:for="{{skuConfig.wap}}" wx:key="index">
+            <view class="block" wx:if="{{item.live==1}}">
+                <view class="lump">
+                    <image src="../../image/systemclass.png" class="systemclass"></image>
+                    <image src="../../image/hot.png" class="hot"></image>
+                </view>
+                <text class="txt">系统班</text>
             </view>
-            <text class="txt">系统班</text>
-        </view>
-        <view class="block">
-            <view class="lump">
-                <image src="../../image/video.png" class="video"></image>
+            <view class="block" wx:elif="{{item.video==1}}">
+                <view class="lump">
+                    <image src="../../image/video.png" class="video"></image>
+                </view>
+                <text class="txt">视频课</text>
             </view>
-            <text class="txt">视频课</text>
-        </view>
+        </block>
     </view>
 </view>
