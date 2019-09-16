@@ -1,7 +1,57 @@
-.nav{
-	display: flex;
-	justify-content:space-between;
-	color:#47c88a;
-	padding:20rpx 20rpx;
-	font-size:26rpx;
+.nav {
+    display: flex;
+    justify-content: space-between;
+    color: #47c88a;
+    padding: 20rpx 20rpx;
+    font-size: 26rpx;
+	background:white;
+}
+
+.module {
+    display: flex;
+	background:white;
+	border-bottom:solid 1rpx #dcdcdc;
+}
+
+.module .block {
+    padding: 58rpx 48rpx 43rpx;
+}
+
+.module .lump {
+    position: relative;
+    width: 90rpx;
+    height: 90rpx;
+    border-radius: 50%;
+    background: #f6f6f6;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.module .txt {
+    text-align: center;
+    color: #333;
+    font-size: 28rpx;
+    margin-top: 20rpx;
+}
+
+.module .systemclass {
+    width: 51rpx;
+	height:39rpx;
+	margin:0 auto;
+}
+
+.module .hot {
+    width: 25rpx;
+	height:33rpx;
+    position: absolute;
+    right: 0;
+    top: -6rpx;
+}
+
+.module .video{
+	width: 53rpx;
+	height:32rpx;
+	margin:0 auto;
 }

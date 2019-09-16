@@ -1,6 +1,23 @@
-<advertisement />
-<view class="nav">
-	<view>分类</view>
-	<view>关注公众号</view>
+<view>
+    <advertisement />
+    <view class="nav">
+        <view>分类</view>
+        <view>关注公众号</view>
+    </view>
+    <banner />
+    <view class="module">
+        <view class="block">
+            <view class="lump">
+                <image src="../../image/systemclass.png" class="systemclass"></image>
+                <image src="../../image/hot.png" class="hot"></image>
+            </view>
+            <text class="txt">系统班</text>
+        </view>
+        <view class="block">
+            <view class="lump">
+                <image src="../../image/video.png" class="video"></image>
+            </view>
+            <text class="txt">视频课</text>
+        </view>
+    </view>
 </view>
-<banner />

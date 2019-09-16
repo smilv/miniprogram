@@ -1,35 +1,35 @@
 {
-    "pages": [
-        "pages/home/home",
-        "pages/my/my",
-        "pages/index/index",
-        "pages/logs/logs"
-    ],
-    "window": {
-        "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#fff",
-        "navigationBarTitleText": "对啊课堂",
-        "navigationBarTextStyle": "black"
-    },
-    "sitemapLocation": "sitemap.json",
-    "tabBar": {
-        "color": "#999",
-        "selectedColor": "#000",
-        "borderStyle": "black",
-        "backgroundColor": "#ffffff",
-        "list": [
-            {
-                "pagePath": "pages/home/home",
-                "iconPath": "image/tab1.png",
-                "selectedIconPath": "image/tab1_on.png",
-                "text": "首页"
-            },
-            {
-                "pagePath": "pages/my/my",
-                "iconPath": "image/tab2.png",
-                "selectedIconPath": "image/tab2_on.png",
-                "text": "我的"
-            }
-        ]
-    }
+	"pages": [
+		"pages/home/home",
+		"pages/my/my",
+		"pages/index/index",
+		"pages/logs/logs"
+	],
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#fff",
+		"navigationBarTitleText": "对啊课堂",
+		"navigationBarTextStyle": "black"
+	},
+	"sitemapLocation": "sitemap.json",
+	"tabBar": {
+		"color": "#999",
+		"selectedColor": "#000",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/home/home",
+				"iconPath": "image/tab1.png",
+				"selectedIconPath": "image/tab1_on.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"iconPath": "image/tab2.png",
+				"selectedIconPath": "image/tab2_on.png",
+				"text": "我的"
+			}
+		]
+	}
 }
