@@ -1,0 +1,2 @@
+/* pages/home/open-class/open-class.wxss */
+@import "../home.wxss";

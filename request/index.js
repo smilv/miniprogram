@@ -1,3 +1,4 @@
+//bin 2019/9/6
 //request接口封装
 const uri = require("../uri/index.js")
 const request = (url, method, header, data) => {

@@ -1,6 +1,7 @@
+//bin 2019/9/12
 // 首页banner图
-const request = require("../../request/index.js")
-const uri = require("../../uri/index.js")
+const request = require("../../../request/index.js")
+const uri = require("../../../uri/index.js")
 
 Component({
     data: {

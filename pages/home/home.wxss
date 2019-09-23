@@ -4,13 +4,13 @@
     color: #47c88a;
     padding: 20rpx 20rpx;
     font-size: 26rpx;
-	background:white;
+    background: white;
 }
 
 .module {
     display: flex;
-	background:white;
-	border-bottom:solid 1rpx #dcdcdc;
+    background: white;
+    border-bottom: solid 1rpx #dcdcdc;
 }
 
 .module .block {
@@ -38,20 +38,53 @@
 
 .module .systemclass {
     width: 51rpx;
-	height:39rpx;
-	margin:0 auto;
+    height: 39rpx;
+    margin: 0 auto;
 }
 
 .module .hot {
     width: 25rpx;
-	height:33rpx;
+    height: 33rpx;
     position: absolute;
     right: 0;
     top: -6rpx;
 }
 
-.module .video{
-	width: 53rpx;
-	height:32rpx;
-	margin:0 auto;
+.module .video {
+    width: 53rpx;
+    height: 32rpx;
+    margin: 0 auto;
+}
+
+.class {
+    border-top: solid 1rpx #dcdcdc;
+    border-bottom: solid 1rpx #dcdcdc;
+    background: white;
+    margin-top: 20rpx;
+}
+
+.title {
+    line-height: 109rpx;
+    position: relative;
+    text-align: center;
+}
+
+.title {
+    color: #333;
+    font-size: 32rpx;
+    font-weight: bold;
+}
+
+.more{
+    color: #999;
+    font-size: 24rpx;
+    position: absolute;
+    right: 30rpx;
+    top: 40rpx;
+    line-height: initial;
+}
+
+.title image {
+    width: 10rpx;
+    margin-left: 10rpx;
 }

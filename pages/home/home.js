@@ -1,3 +1,4 @@
+//bin 2019/9/12
 const request = require("../../request/index.js");
 
 Page({

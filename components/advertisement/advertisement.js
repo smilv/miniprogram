@@ -1,3 +1,4 @@
+//bin 2019/9/10
 // 首页app广告
 const request = require("../../request/index.js")
 const uri = require("../../uri/index.js")

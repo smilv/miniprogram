@@ -2,6 +2,7 @@
     "navigationBarTitleText": "会计初级职称",
     "usingComponents":{
         "advertisement":"/components/advertisement/advertisement",
-		"banner":"/components/banner/banner"
+		"banner":"./banner/banner",
+		"open-class":"./open-class/open-class"
     }
 }
