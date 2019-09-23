@@ -36,6 +36,7 @@
 
 .avatar-img {
     width: 110rpx;
+	height:110rpx;
     border-radius: 50%;
     border: solid 1rpx #e6e6e6;
 }

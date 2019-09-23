@@ -87,4 +87,6 @@
 .title image {
     width: 10rpx;
     margin-left: 10rpx;
+	vertical-align: top;
+	margin-top:10rpx;
 }

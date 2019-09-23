@@ -11,7 +11,7 @@
         <view class="item" wx:for="{{data.courseLiveNewDtos}}" wx:key="index">
             <view class="teacher">
                 <view class="avatar">
-                    <image class="avatar-img" src="{{item.teacherUrl==''?'../../../image/teacher-default-head.png':uri.tuPath+item.teacherUrl}}" mode="widthFix"></image>
+                    <image class="avatar-img" src="{{item.teacherUrl==''?'../../../image/teacher-default-head.png':uri.tuPath+item.teacherUrl}}"></image>
                     <view class="dynamic" wx:if="{{item.openLiveStatus==2}}">
                         <image src="../../../image/dynamic.gif" mode="widthFix"></image>
                     </view>
