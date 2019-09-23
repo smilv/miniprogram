@@ -2,9 +2,12 @@
 <view class="class">
     <view class="title">
         <text>公开课</text>
-		<view class="more">
-			<text>更多</text>
-			<image src="../../../image/right.png" mode="widthFix"></image>
-		</view>
+        <view class="more">
+            <text>更多</text>
+            <image src="../../../image/right.png" mode="widthFix"></image>
+        </view>
     </view>
+    <scroll-view class="scroll-view_H" scroll-x="true">
+        <view class="item">1</view>
+    </scroll-view>
 </view>

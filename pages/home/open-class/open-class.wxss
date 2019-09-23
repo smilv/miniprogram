@@ -1,2 +1,20 @@
 /* pages/home/open-class/open-class.wxss */
 @import "../home.wxss";
+
+.scroll-view_H {
+	width:100%;
+	white-space: nowrap;
+	margin-bottom: 42rpx;
+}
+
+.item {
+	display: inline-block;
+    background: #f6f6f6;
+    border-radius: 4rpx;
+    margin-top: 55rpx;
+    padding: 0 50rpx;
+    text-align: center;
+    height: 260rpx;
+    width: 450rpx;
+    margin-left: 32rpx;
+}
