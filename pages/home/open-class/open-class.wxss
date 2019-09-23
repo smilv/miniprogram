@@ -2,13 +2,13 @@
 @import "../home.wxss";
 
 .scroll-view_H {
-	width:100%;
-	white-space: nowrap;
-	margin-bottom: 42rpx;
+    width: 100%;
+    white-space: nowrap;
+    margin-bottom: 42rpx;
 }
 
 .item {
-	display: inline-block;
+    display: inline-block;
     background: #f6f6f6;
     border-radius: 4rpx;
     margin-top: 55rpx;
@@ -17,4 +17,94 @@
     height: 260rpx;
     width: 450rpx;
     margin-left: 32rpx;
+}
+
+.teacher {
+    border-bottom: solid 1rpx #e3e3e3;
+    position: relative;
+    padding-top: 33rpx;
+}
+
+.avatar {
+    position: absolute;
+    left: 50%;
+    top: -54rpx;
+    width: 110rpx;
+    height: 110rpx;
+    transform: translateX(-50%);
+}
+
+.avatar-img {
+    width: 110rpx;
+    border-radius: 50%;
+    border: solid 1rpx #e6e6e6;
+}
+
+.dynamic {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.dynamic image {
+    width: 40rpx;
+    margin-top: 36%;
+}
+
+.start-time {
+    width: 110rpx;
+    line-height: 40rpx;
+    color: #fff;
+    position: relative;
+    margin: 0 auto;
+    background: rgba(0, 203, 132, 1);
+    border-radius: 20rpx;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 26rpx;
+}
+
+.name {
+    color: #666;
+    margin: 25rpx 0 28rpx 0;
+    font-size: 26rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.status {
+    display: flex;
+    justify-content: space-between;
+    line-height: 100rpx;
+    color: #999;
+    font-size: 26rpx;
+}
+
+.status .but {
+    background: #fff;
+    width: 110rpx;
+    line-height: 46rpx;
+    height: 46rpx;
+    border-radius: 23rpx;
+    margin-top: 24rpx;
+}
+
+.status .appointment {
+    width: 110rpx;
+    height: 44rpx;
+    border: solid 2rpx #bdbdbd;
+    color: #999;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 23rpx;
+    line-height: 44rpx;
+}
+
+.status .liveOnLive {
+    border: solid 2rpx #47c88a;
+    color: #00cb84;
 }
