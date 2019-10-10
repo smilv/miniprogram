@@ -1,12 +1,17 @@
 //bin 2019/9/6
 //request接口封装
 const uri = require("../uri/index.js")
-const request = (url, method, header, data) => {
+const tools = require("../utils/tools.js");
+const request = (method, url, config, data) => {
+    config = config || {};
+    if (config.params) {
+        url += '?' + tools.sortParam(config.params)
+    }
     return new Promise((resolve, reject) => {
         wx.request({
             url: url,
             method: method,
-            header: header,
+            header: config.header || {},
             data: data,
             success(res) {
                 resolve(res.data);
@@ -21,20 +26,28 @@ const request = (url, method, header, data) => {
 module.exports = {
     //首页广告
     recommend: () => {
-        return request(uri.skuPath + '/wap/recommend')
+        return request("GET", uri.skuPath + '/wap/recommend')
     },
     //sku配置
     skuConfig: data => {
-        return request(uri.skuPath + '/index/config/sku', 'POST', {
-            'content-type': 'application/x-www-form-urlencoded'
+        return request("POST", uri.skuPath + '/index/config/sku', {
+            header: {
+                'content-type': 'application/x-www-form-urlencoded'
+            }
         }, data)
     },
     //首页banner
     banner: skuId => {
-        return request(uri.skuPath + '/wap/carousel/' + skuId)
+        return request("GET", uri.skuPath + '/wap/carousel/' + skuId)
     },
     //公开课列表
     openClass: skuId => {
-        return request(uri.skuPath + '/wap/openLives/' + skuId)
+        return request("GET", uri.skuPath + '/wap/openLives/' + skuId)
+    },
+    //系统班列表
+    systemClass: data => {
+        return request("POST", uri.skuPath + '/feeLive/' + data.sku, {
+            params: data
+        })
     }
 }
