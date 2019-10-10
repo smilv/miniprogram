@@ -1,2 +1,41 @@
 <!--pages/home/system-class/system-class.wxml-->
-<text>系统班</text>
+<wxs src="../../../utils/filter.wxs" module="filter" />
+<view class="class">
+    <view class="title">
+        <text>系统班</text>
+        <view class="more">
+            <text>更多</text>
+            <image src="../../../image/right.png" mode="widthFix"></image>
+        </view>
+    </view>
+    <view class="flex-container">
+        <view class="flex-item" wx:for="{{data}}" wx:key="index">
+            <view class="wap-img">
+                <image class="cover-img" src="{{uri.tuPath+item.appCoverUrl}}" />
+                <image class="item-tag" wx:if="{{item.courseType==0}}" src="../../../image/system_class.png" />
+                <image class="item-tag" wx:else="{{item.courseType==1}}" src="../../../image/thematic_class.png" />
+            </view>
+            <view class="item-title">{{item.name}}</view>
+            <view class="item-data">
+                <view class="item-price">
+                    <view wx:if="{{item.courseType==0&&item.discount==0}}">
+                        <text class="rmb">￥</text>{{filter.formatDecimal(item.realPrice)}}
+                    </view>
+                    <view wx:elif="{{item.courseType==0&&item.discount!=0&&item.disCharge==1}}">
+                        <text class="rmb">￥</text>{{filter.formatDecimal(item.disPrice)}}
+                    </view>
+                    <view wx:elif="{{item.courseType==0&&item.disCharge==0}}">
+                        免费
+                    </view>
+                    <view wx:elif="{{item.courseType==1&&item.disCharge==1}}">
+                        {{filter.formatDecimal(data.disPrice)}}
+                    </view>
+                    <view wx:else="{{item.courseType==1&&item.disCharge==0}}">
+                        免费
+                    </view>
+                </view>
+                <view class="item-number">{{filter.tenThousand(item.respStuNum)}}人购买</view>
+            </view>
+        </view>
+    </view>
+</view>

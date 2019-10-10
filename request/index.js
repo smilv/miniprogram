@@ -1,9 +1,12 @@
-//bin 2019/9/6
-//request接口封装
+/**
+ * bin 2019/9/6
+ * request接口封装
+ */
 const uri = require("../uri/index.js")
 const tools = require("../utils/tools.js");
 const request = (method, url, config, data) => {
     config = config || {};
+    config.header = config.header || {};
     if (config.params) {
         url += '?' + tools.sortParam(config.params)
     }
@@ -11,7 +14,7 @@ const request = (method, url, config, data) => {
         wx.request({
             url: url,
             method: method,
-            header: config.header || {},
+            header: config.header,
             data: data,
             success(res) {
                 resolve(res.data);

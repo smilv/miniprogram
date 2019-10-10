@@ -23,5 +23,5 @@
         </block>
     </view>
 	<open-class />
-	<system-class />
+	<system-class wx:if="{{skuConfig.wap[0].live==1}}" />
 </view>

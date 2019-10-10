@@ -17,7 +17,8 @@ Component({
      * 组件的初始数据
      */
     data: {
-
+		uri:uri,
+		data: null
     },
 
     /**
@@ -27,13 +28,14 @@ Component({
         attached: function() {
             request.systemClass({
                 sku: 133,
-                ftype: 1,
+                ftype: 0,
                 os: 0,
-                appType: 998,
-                page: 1,
-                size: 5,
-                lmVerify: 0
-            })
+                appType: 998
+            }).then(res=>{
+				this.setData({
+					data:res.data
+				})
+			})
         }
     },
 
