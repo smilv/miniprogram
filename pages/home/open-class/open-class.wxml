@@ -1,5 +1,5 @@
 <!--pages/home/open-class/open-class.wxml-->
-<view class="class">
+<view class="class" wx:if="{{data.courseLiveNewStatus==1}}">
     <view class="title">
         <text>公开课</text>
         <view class="more">

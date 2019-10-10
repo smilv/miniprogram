@@ -3,6 +3,7 @@
     "usingComponents":{
         "advertisement":"/components/advertisement/advertisement",
 		"banner":"./banner/banner",
-		"open-class":"./open-class/open-class"
+		"open-class":"./open-class/open-class",
+		"system-class":"./system-class/system-class"
     }
 }

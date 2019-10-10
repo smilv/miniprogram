@@ -23,4 +23,5 @@
         </block>
     </view>
 	<open-class />
+	<system-class />
 </view>
