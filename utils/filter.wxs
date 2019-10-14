@@ -14,5 +14,37 @@ module.exports = {
     tenThousand: function(value) {
         var result = value >= 10000 ? Math.floor(value / 1000) / 10 + "万" : value;
         return result;
-    }
+    },
+	/**
+	 * 视频列表 时间计算
+	 */
+	videoTimes: function (format){
+		var fen = (parseInt(format) / 60).toFixed(2).split(".")[0] * 1;
+		var mon = parseInt(0.6 * (parseInt(format) / 60).toFixed(2).split(".")[1]);
+		format = fen + ":" + mon;
+		if (mon == 0) {
+			format = "0" + fen + ":" + mon + "0";
+		}
+		if (fen < 10 && mon > 0 && mon < 10) {
+			format = "0" + fen + ":0" + mon;
+		} else if (fen < 10 && mon >= 10 && mon < 60) {
+			format = "0" + fen + ":" + mon;
+		} else if (10 <= fen <= 60 && mon > 0 && mon < 10) {
+			format = fen + ":0" + mon;
+		} else if (10 <= fen <= 60 && mon >= 10 && mon < 60) {
+			format = fen + ":" + mon;
+		}
+		if (fen > 60) {
+			var hour = (fen / 60).toFixed(2).split(".")[0];
+			fen = Math.floor(fen / 60);
+			if (hour < 10) {
+				hour = "0" + hour;
+			}
+			if (fen < 10) {
+				fen = "0" + fen;
+			}
+			format = hour + ":" + fen + ":" + mon;
+		}
+		return format;
+	}
 }

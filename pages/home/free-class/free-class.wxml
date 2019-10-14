@@ -1,0 +1,35 @@
+<!--pages/home/free-class/free-class.wxml-->
+<wxs src="../../../utils/filter.wxs" module="filter" />
+<view class="class">
+    <view class="title">
+        <text>视频课</text>
+        <view class="more">
+            <text>更多</text>
+            <image src="../../../image/right.png" mode="widthFix"></image>
+        </view>
+    </view>
+    <view class="flex-container">
+        <view class="flex-item" wx:for="{{data}}" wx:key="index">
+            <view class="videoImg">
+                <image alt="" src="{{uri.tuPath+item.coverUrl}}" />
+                <view v-if="item.type == 2">专属</view>
+                <view v-if="item.type == 1">VIP</view>
+                <view v-if="item.type == 0">免费</view>
+            </view>
+            <view class="videoTitle">{{item.title}}</view>
+            <view class="countCourse">共：{{item.chapterNum}}章{{item.partNum}}节</view>
+            <view class="studyType">
+                <view class="unlearn float-l" wx:if="item.learningStatus == 0">
+                    <text class="float-l i"></text>
+                    <text class="float-l span">还未开始学习</text>
+                </view>
+                <view class="learn float-l" wx:else="item.learningStatus == 1">
+                    <text class="float-l i"></text>
+                    <text class="float-l span">已学到{{item.chapterNo}}章{{item.lectureNo}}节{{filter.videoTimes(item.timeProgress)}}</text>
+                </view>
+                <view class="learnCount float-r">
+                    <text class="span">{{item.studentsNum}}</text>人学习</view>
+            </view>
+        </view>
+    </view>
+</view>

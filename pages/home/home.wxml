@@ -24,4 +24,5 @@
     </view>
 	<open-class />
 	<system-class wx:if="{{skuConfig.wap[0].live==1}}" />
+	<free-class wx:if="{{skuConfig.wap[1].video==1}}" />
 </view>

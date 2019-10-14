@@ -4,6 +4,7 @@
         "advertisement":"/components/advertisement/advertisement",
 		"banner":"./banner/banner",
 		"open-class":"./open-class/open-class",
-		"system-class":"./system-class/system-class"
+		"system-class":"./system-class/system-class",
+		"free-class":"./free-class/free-class"
     }
 }

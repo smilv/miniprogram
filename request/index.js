@@ -52,5 +52,9 @@ module.exports = {
         return request("POST", uri.skuPath + '/feeLive/' + data.sku, {
             params: data
         })
-    }
+    },
+	//首页视频课列表
+	coursesClass: skuId => {
+		return request("GET", uri.skuPath + '/wap/courses/' + skuId)
+	}
 }
