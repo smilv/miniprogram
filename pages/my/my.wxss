@@ -1,0 +1,16 @@
+.user {
+    padding: 50rpx 30rpx;
+    display: flex;
+    justify-content: space-between;
+	background:white;
+	border-top:solid 1rpx #dcdcdc;
+}
+
+.login {
+    display: flex;
+}
+
+.login image {
+    width: 138rpx;
+    height: 138rpx;
+}

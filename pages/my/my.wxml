@@ -1,0 +1,9 @@
+<view>
+    <view class="user">
+        <view class="login">
+		<image src="../../image/nologin.png"></image>
+        </view>
+		<view>
+        </view>
+    </view>
+</view>
