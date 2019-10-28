@@ -1,9 +1,32 @@
 <view>
     <view class="user">
-        <view class="login">
-		<image src="../../image/nologin.png"></image>
+        <image src="../../image/nologin.png"></image>
+        <text>登录/注册</text>
+    </view>
+    <view class="link first">
+        <view class="list">
+            <view>
+                <image src="../../image/icon1.png" class="icon" mode="widthFix"></image>
+				<text>我的课程</text>
+            </view>
+			<image src="../../image/right.png" class="point" mode="widthFix"></image>
         </view>
-		<view>
+		<view class="list">
+            <view>
+                <image src="../../image/icon2.png" class="icon" mode="widthFix"></image>
+				<text>我的订单</text>
+            </view>
+			<image src="../../image/right.png" class="point" mode="widthFix"></image>
         </view>
     </view>
+	<view class="link">
+        <view class="list">
+            <view>
+                <image src="../../image/icon5.png" class="icon" mode="widthFix"></image>
+				<text>关于我们</text>
+            </view>
+			<image src="../../image/right.png" class="point" mode="widthFix"></image>
+        </view>
+    </view>
+	<view class="space"></view>
 </view>

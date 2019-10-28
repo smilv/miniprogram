@@ -1,16 +1,56 @@
 .user {
-    padding: 50rpx 30rpx;
+    padding: 60rpx 30rpx;
     display: flex;
-    justify-content: space-between;
-	background:white;
-	border-top:solid 1rpx #dcdcdc;
+    background: #47c88a;
 }
-
-.login {
-    display: flex;
-}
-
-.login image {
+.user image {
     width: 138rpx;
     height: 138rpx;
+}
+.user text{
+	color:white;
+	font-size: 32rpx;
+	margin-top:44rpx;
+	margin-left:30rpx;
+}
+.link{
+	background: white;
+	padding-left:30rpx;
+	border-top:solid 1rpx #dcdcdc;
+	border-bottom:solid 1rpx #dcdcdc;
+	margin-top:20rpx;
+}
+.first{
+	border-top:none;
+	margin:0;
+}
+.list{
+	height: 120rpx;
+    line-height: 120rpx;
+    font-size: 32rpx;
+    color: #333;
+	position: relative;
+	border-top:solid 1rpx #dcdcdc;
+}
+.list .icon{
+	width:42rpx;
+	position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.list text{
+	margin-left:70rpx;
+}
+.point{
+	width:20rpx;
+	position: absolute;
+    right: 30rpx;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.list:first-child{
+	border:none;
 }
