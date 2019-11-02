@@ -5,6 +5,18 @@
 		"pages/index/index",
 		"pages/logs/logs"
 	],
+	"subPackages": [
+		{
+			"root": "packageSku",
+			"pages": []
+		},
+		{
+			"root": "packageUser",
+			"pages": [
+				"pages/about/about"
+			]
+		}
+	],
 	"window": {
 		"backgroundTextStyle": "light",
 		"navigationBarBackgroundColor": "#47c88a",

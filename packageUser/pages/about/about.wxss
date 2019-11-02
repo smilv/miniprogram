@@ -1,0 +1,41 @@
+/* packageUser/about.wxss */
+
+page {
+    background: white;
+}
+
+.appLogo {
+    margin: 160rpx auto 20rpx;
+    width: 166rpx;
+    height: 166rpx;
+    display: block;
+}
+
+.duia {
+    display: block;
+    text-align: center;
+    font-size: 34rpx;
+    color: #666;
+    margin-bottom: 40rpx;
+}
+
+.here {
+    color: #333;
+    font-size: 40rpx;
+    text-align: center;
+}
+
+.bottom {
+    text-align: center;
+    position: absolute;
+    bottom: 80rpx;
+    left: 0;
+    right: 0;
+}
+
+.bottom span {
+    margin-top: 40rpx;
+    font-size: 32rpx;
+    color: #999;
+    display: block;
+}

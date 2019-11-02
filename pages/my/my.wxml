@@ -7,26 +7,28 @@
         <view class="list">
             <view>
                 <image src="../../image/icon1.png" class="icon" mode="widthFix"></image>
-				<text>我的课程</text>
+                <text>我的课程</text>
             </view>
-			<image src="../../image/right.png" class="point" mode="widthFix"></image>
+            <image src="../../image/right.png" class="point" mode="widthFix"></image>
         </view>
-		<view class="list">
-            <view>
-                <image src="../../image/icon2.png" class="icon" mode="widthFix"></image>
-				<text>我的订单</text>
-            </view>
-			<image src="../../image/right.png" class="point" mode="widthFix"></image>
-        </view>
-    </view>
-	<view class="link">
         <view class="list">
             <view>
-                <image src="../../image/icon5.png" class="icon" mode="widthFix"></image>
-				<text>关于我们</text>
+                <image src="../../image/icon2.png" class="icon" mode="widthFix"></image>
+                <text>我的订单</text>
             </view>
-			<image src="../../image/right.png" class="point" mode="widthFix"></image>
+            <image src="../../image/right.png" class="point" mode="widthFix"></image>
         </view>
     </view>
-	<view class="space"></view>
+    <view class="link">
+        <view class="list">
+            <navigator url="../../packageUser/pages/about/about">
+                <view>
+                    <image src="../../image/icon5.png" class="icon" mode="widthFix"></image>
+                    <text>关于我们</text>
+                </view>
+                <image src="../../image/right.png" class="point" mode="widthFix"></image>
+            </navigator>
+        </view>
+    </view>
+    <view class="space"></view>
 </view>

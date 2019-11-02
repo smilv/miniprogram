@@ -1,0 +1,12 @@
+<!--packageUser/about.wxml-->
+<view>
+    <view>
+        <image src="../../../image/app_logo.png" class="appLogo"></image>
+        <view class="duia">对啊课堂</view>
+        <view class="here">在这里，重塑职业未来</view>
+    </view>
+    <view class="bottom">
+        <view>北京对啊网教育科技有限公司</view>
+        <view>duia.com</view>
+    </view>
+</view>
