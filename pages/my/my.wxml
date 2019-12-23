@@ -21,7 +21,7 @@
     </view>
     <view class="link">
         <view class="list">
-            <navigator url="../../packageUser/pages/about/about">
+            <navigator url="../user/pages/about/about">
                 <view>
                     <image src="../../image/icon5.png" class="icon" mode="widthFix"></image>
                     <text>关于我们</text>

@@ -1,7 +1,7 @@
-<!--packageUser/about.wxml-->
+<!--about.wxml-->
 <view>
     <view>
-        <image src="../../../image/app_logo.png" class="appLogo"></image>
+        <image src="/image/app_logo.png" class="appLogo"></image>
         <view class="duia">对啊课堂</view>
         <view class="here">在这里，重塑职业未来</view>
     </view>

@@ -7,11 +7,11 @@
 	],
 	"subPackages": [
 		{
-			"root": "packageSku",
+			"root": "pages/sku",
 			"pages": []
 		},
 		{
-			"root": "packageUser",
+			"root": "pages/user",
 			"pages": [
 				"pages/about/about"
 			]
