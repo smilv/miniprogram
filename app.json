@@ -13,7 +13,8 @@
 		{
 			"root": "pages/user",
 			"pages": [
-				"pages/about/about"
+				"pages/about/about",
+				"pages/login/login"
 			]
 		}
 	],

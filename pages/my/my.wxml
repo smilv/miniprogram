@@ -1,7 +1,7 @@
 <view>
     <view class="user">
         <image src="../../image/nologin.png"></image>
-        <text>登录/注册</text>
+		<navigator url="../user/pages/login/login">登录/注册</navigator>
     </view>
     <view class="link first">
         <view class="list">

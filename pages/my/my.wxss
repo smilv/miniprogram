@@ -7,11 +7,13 @@
     width: 138rpx;
     height: 138rpx;
 }
-.user text{
+.user navigator{
+	margin-top:48rpx;
+	margin-left:30rpx;
+	line-height:32rpx;
 	color:white;
 	font-size: 32rpx;
-	margin-top:44rpx;
-	margin-left:30rpx;
+	height:32rpx;
 }
 .link{
 	background: white;

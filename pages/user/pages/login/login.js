@@ -1,5 +1,5 @@
-// pages/user/pages/about/about.js
-// bin 2019/11/2
+// pages/user/pages/login/login.js
+// bin 2019/12/23
 Page({
 
 	/**
